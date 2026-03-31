@@ -5,19 +5,19 @@
     "ReplicatedStorage": {
       "$className": "ReplicatedStorage",
       "client": {
-        "$path": "src/client"
+        "$path": "out/client"
       },
       "packages": {
         "$path": "Packages"
       },
       "shared": {
-        "$path": "src/shared"
+        "$path": "out/shared"
       }
     },
     "ServerScriptService": {
       "$className": "ServerScriptService",
       "server": {
-        "$path": "src/server"
+        "$path": "out/server"
       }
     },
     "StarterPlayer": {
@@ -25,7 +25,7 @@
       "StarterPlayerScripts": {
         "$className": "StarterPlayerScripts",
         "runtime": {
-          "$path": "src/runtime.client.luau"
+          "$path": "out/runtime.client.luau"
         }
       }
     }

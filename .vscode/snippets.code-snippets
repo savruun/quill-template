@@ -1,0 +1,10 @@
+{
+  "Quill Provider": {
+    "prefix": [
+      "provider",
+      "prvd"
+    ],
+    "description": "Create a Quill Provider.",
+    "body": []
+  }
+}
