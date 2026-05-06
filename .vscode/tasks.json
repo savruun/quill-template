@@ -1,0 +1,43 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Rojo Dev",
+      "type": "shell",
+      "options": {
+        "shell": {
+          "executable": "/usr/bin/zsh",
+          "args": [
+            "-i",
+            "-c"
+          ]
+        }
+      },
+      "command": "pesde run start",
+      "presentation": {
+        "panel": "dedicated",
+        "reveal": "always"
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "Roblox Studio",
+      "type": "shell",
+      "options": {
+        "shell": {
+          "executable": "/usr/bin/zsh",
+          "args": [
+            "-i",
+            "-c"
+          ]
+        }
+      },
+      "command": "pesde run studio",
+      "presentation": {
+        "panel": "dedicated",
+        "reveal": "always"
+      },
+      "problemMatcher": []
+    }
+  ]
+}

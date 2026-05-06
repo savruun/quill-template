@@ -1,0 +1,2 @@
+option ServerOutput = "src/server/net"
+option ClientOutput = "src/client/net"
