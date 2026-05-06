@@ -1,23 +1,42 @@
 -- Packages
-local react = require('@packages/react')
 
--- Hooks
-local use_page = require('@client/interface/hooks/use_page')
+const vide = require('@pkg/vide')
+const charm = require('@pkg/charm')
 
--- React localizations
-local e = react.createElement
+const getComponents = require('@ui/util/getComponents')
+const getPages = require('@ui/util/getPages')
+const map = require('@ui/util/map')
+const useAtom = require('@ui/hooks/useAtom')
 
--- Function component
-local function App(props: { pages: { react.ReactNode } })
-	local page = use_page()
+const create = vide.create
+const values = vide.values
+const show = vide.show
 
-	return e('ScreenGui', {
-		IgnoreGuiInset = true,
+const pages = getPages()
+const components = getComponents()
+
+const function App(page: charm.Atom<string?>, mountedComponents: charm.Atom<{ string }>)
+	const mountedList = useAtom(mountedComponents)
+	const pageName = useAtom(page)
+
+	return create 'ScreenGui' {
+		Name = 'VIDE_ROOT',
 		ResetOnSpawn = false,
-		Name = 'App',
-	}, {
-		page and e(page),
-	})
+		IgnoreGuiInset = true,
+
+		map(pages, function(_, currentName: string)
+			return show(function()
+				return currentName == pageName()
+			end, pages[currentName])
+		end),
+
+		create 'Folder' {
+			Name = 'components',
+			values(mountedList, function(name: string)
+				return components[name]()
+			end)
+		}
+	}
 end
 
 return App

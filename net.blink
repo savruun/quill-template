@@ -1,3 +1,8 @@
+<<<<<<< HEAD
 option ServerOutput = "src/server/net"
 option ClientOutput = "src/client/net"
 
+=======
+option ServerOutput = "src/server/net"
+option ClientOutput = "src/client/net"
+>>>>>>> main

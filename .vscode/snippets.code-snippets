@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 {
   "Quill Provider": {
     "prefix": [
@@ -7,4 +8,117 @@
     "description": "Create a Quill Provider.",
     "body": []
   }
+=======
+{
+  "Quill Provider": {
+    "prefix": [
+      "provider",
+      "prvd"
+    ],
+    "description": "Create a Quill Provider.",
+    "body": [
+      "const ${TM_FILENAME_BASE/(.*)/${1:/pascalcase}/g} = {}",
+      "",
+      "function ${TM_FILENAME_BASE/(.*)/${1:/pascalcase}/g}.start(self: self)",
+      "",
+      "end",
+      "",
+      "export type self = typeof(${TM_FILENAME_BASE/(.*)/${1:/pascalcase}/g})",
+      "return ${TM_FILENAME_BASE/(.*)/${1:/pascalcase}/g}"
+    ]
+  },
+  "Conch Command": {
+    "prefix": [
+      "command",
+      "cmd"
+    ],
+    "description": "Create a Conch Command.",
+    "body": [
+      "const conch = require('@pkg/conch')",
+      "",
+      "const ${TM_FILENAME_BASE/(.*)/${1:/pascalcase}/g}Command = conch.register('${TM_FILENAME_BASE/(.*)/${1:/snakecase}/g}', {",
+      "\tdescription = 'Description of the command',",
+      "\tpermissions = { 'permission_name' },",
+      "",
+      "\targuments = function() end,",
+      "\tcallback = function() end",
+      "})",
+      "",
+      "return ${TM_FILENAME_BASE/(.*)/${1:/pascalcase}/g}Command"
+    ]
+  },
+  "Vide Component": {
+    "prefix": [
+      "vide",
+      "ui"
+    ],
+    "description": "Create a Vide Component.",
+    "body": [
+      "const vide = require('@pkg/vide')",
+      "const create = vide.create",
+      "",
+      "const function ${TM_FILENAME_BASE/(.*)/${1:/pascalcase}/g}()",
+      "\treturn create 'Frame' {}",
+      "end",
+      "",
+      "return ${TM_FILENAME_BASE/(.*)/${1:/pascalcase}/g}"
+    ]
+  },
+  "Strict": {
+    "prefix": [
+      "strict",
+      "st"
+    ],
+    "description": "Inserts a strict mode flag.",
+    "body": [
+      "--!strict"
+    ]
+  },
+  "Quill Component": {
+    "prefix": [
+      "quillcomp",
+      "comp",
+      "component"
+    ],
+    "body": [
+      "const components = require('@pkg/quill_rblx_components')",
+      "",
+      "-- Component Class",
+      "local ${1:${TM_FILENAME_BASE/(^|_|-)(\\w)/${2:/upcase}/g}} = {}",
+      "${1}.__index = ${1}",
+      "",
+      "type ${1}Properties = { }",
+      "export type self = setmetatable<${1}Properties, typeof(${1})>",
+      "",
+      "-- Runs when the component is bound to an Instance",
+      "function ${1}.init(self: self)",
+      "end",
+      "",
+      "-- Runs when the Instance is destroyed",
+      "function ${1}.destroy(self: self)",
+      "end",
+      "",
+      "",
+      "-- Quill component wrapper",
+      "local ${1}Component = {}",
+      "",
+      "-- Contains info such as filters",
+      "${1}Component.info = components.info {",
+      "  is = components.singleton('INSTANCE_TYPE_HERE'),",
+      "  tag = components.singleton('${1}')",
+      "}",
+      "",
+      "-- Ran when the Component is constructing a new class instance",
+      "function ${1}Component:new(data: components.CreationData<typeof(${1}Component.info)>)",
+      "  local instance = setmetatable({}, ${1})",
+      "",
+      "  return instance",
+      "end",
+      "",
+      "return ${1}Component",
+      ""
+    ],
+    "description": "Quill component using filename as PascalCase class name"
+  }
+>>>>>>> main
 }

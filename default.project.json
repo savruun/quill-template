@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 {
   "name": "QuillTemplate",
   "tree": {
@@ -30,4 +31,41 @@
       }
     }
   }
+=======
+{
+  "name": "SanDiego",
+  "tree": {
+    "$className": "DataModel",
+    "ReplicatedStorage": {
+      "$className": "ReplicatedStorage",
+      "client": {
+        "$path": "src/client"
+      },
+      "packages": {
+        "$path": "roblox_packages"
+      },
+      "shared": {
+        "$path": "src/shared"
+      }
+    },
+    "ServerScriptService": {
+      "$className": "ServerScriptService",
+      "server": {
+        "$path": "src/server"
+      },
+      "packages": {
+        "$path": "roblox_server_packages"
+      }
+    },
+    "StarterPlayer": {
+      "$className": "StarterPlayer",
+      "StarterPlayerScripts": {
+        "$className": "StarterPlayerScripts",
+        "runtime": {
+          "$path": "src/runtime.client.luau"
+        }
+      }
+    }
+  }
+>>>>>>> main
 }
