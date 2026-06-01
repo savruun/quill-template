@@ -12,4 +12,8 @@ function playerUtility:forEachPlayer(callback: (Player) -> ()): RBXScriptConnect
 	return Players.PlayerAdded:Connect(callback)
 end
 
+<<<<<<< HEAD
 return playerUtility
+=======
+return playerUtility
+>>>>>>> 1657481 (feat: update template)

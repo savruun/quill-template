@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 {
   "name": "QuillTemplate",
   "tree": {
@@ -34,6 +35,10 @@
 =======
 {
   "name": "SanDiego",
+=======
+{
+  "name": "QuillTemplate",
+>>>>>>> 1657481 (feat: update template)
   "tree": {
     "$className": "DataModel",
     "ReplicatedStorage": {
@@ -67,5 +72,8 @@
       }
     }
   }
+<<<<<<< HEAD
 >>>>>>> main
+=======
+>>>>>>> 1657481 (feat: update template)
 }

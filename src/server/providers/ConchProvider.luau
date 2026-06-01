@@ -1,4 +1,8 @@
 --!strict
+<<<<<<< HEAD
+=======
+
+>>>>>>> 1657481 (feat: update template)
 const ServerScriptService = game:GetService('ServerScriptService')
 
 const Conch = require('@pkg/conch')

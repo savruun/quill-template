@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 # Project place file
 /QuillObbyGame.rbxlx
 
@@ -11,6 +12,11 @@ out/
 ServerPackages/
 sourcemap.json
 =======
+=======
+# Project place file
+/QuillObbyGame.rbxlx
+
+>>>>>>> 1657481 (feat: update template)
 # Roblox Studio lock files
 /*.rbxlx.lock
 /*.rbxl.lock
@@ -25,5 +31,9 @@ src/server/net.luau
 luau_packages/
 lune_packages/
 roblox_packages/
+<<<<<<< HEAD
 roblox_server_packages/
 >>>>>>> main
+=======
+roblox_server_packages/
+>>>>>>> 1657481 (feat: update template)

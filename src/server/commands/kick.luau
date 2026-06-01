@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 local conch = require('@packages/conch')
 
 local kick_command = conch.register('kick', {
@@ -17,6 +18,8 @@ local kick_command = conch.register('kick', {
 
 return kick_command
 =======
+=======
+>>>>>>> 1657481 (feat: update template)
 const Conch = require('@pkg/conch')
 
 const KickCommand = Conch.register('kick', {
@@ -34,4 +37,7 @@ const KickCommand = Conch.register('kick', {
 })
 
 return KickCommand
+<<<<<<< HEAD
 >>>>>>> main
+=======
+>>>>>>> 1657481 (feat: update template)

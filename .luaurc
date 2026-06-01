@@ -2,6 +2,7 @@
   "aliases": {
     "lune": "~/.lune/.typedefs/0.10.4/",
 <<<<<<< HEAD
+<<<<<<< HEAD
     "ext": "ext/",
     "packages": "Packages/",
     "spackages": "ServerPackages/",
@@ -12,6 +13,13 @@
     "csingletons": "src/client/providers",
     "ssingletons": "src/server/providers",
     "lib": "src/shared/lib",
+=======
+    "csingletons": "src/client/providers",
+    "ssingletons": "src/server/providers",
+    "lib": "src/shared/lib",
+    "data": "src/shared/data",
+    "enums": "src/shared/enums",
+>>>>>>> 1657481 (feat: update template)
     "pkg": "roblox_packages",
     "spkg": "roblox_server_packages",
     "client": "src/client",
@@ -19,6 +27,9 @@
     "shared": "src/shared",
     "types": "src/shared/types",
     "ui": "src/client/interface"
+<<<<<<< HEAD
 >>>>>>> main
+=======
+>>>>>>> 1657481 (feat: update template)
   }
 }
