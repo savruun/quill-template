@@ -25,26 +25,13 @@ const function App(page: charm.Atom<string?>, mountedComponents: charm.Atom<{ st
 		IgnoreGuiInset = true,
 
 		map(pages, function(_, currentName: string)
-<<<<<<< HEAD
-			return show(function()
-				return currentName == pageName()
-			end, pages[currentName])
-=======
 			return show(function() return currentName == pageName() end, pages[currentName])
->>>>>>> 1657481 (feat: update template)
 		end),
 
 		create 'Folder' {
 			Name = 'components',
-<<<<<<< HEAD
-			values(mountedList, function(name: string)
-				return components[name]()
-			end)
-		}
-=======
 			values(mountedList, function(name: string) return components[name]() end),
 		},
->>>>>>> 1657481 (feat: update template)
 	}
 end
 
