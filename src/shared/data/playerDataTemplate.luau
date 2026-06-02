@@ -1,7 +1,3 @@
-<<<<<<< HEAD
-const PLAYER_DATA_TEMPLATE = {
-  cash = 0
-=======
 const anticheatTypes = require('@types/anticheat')
 const cursorIds = require('./cursorIds')
 
@@ -24,7 +20,6 @@ const PLAYER_DATA_TEMPLATE = {
 		enableSpecialLogs = false :: boolean,
 		cursor = 'Default' :: keyof<typeof(cursorIds)>,
 	},
->>>>>>> 1657481 (feat: update template)
 }
 
 return PLAYER_DATA_TEMPLATE

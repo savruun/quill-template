@@ -1,44 +1,6 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
+
 {
   "name": "QuillTemplate",
-  "tree": {
-    "$className": "DataModel",
-    "ReplicatedStorage": {
-      "$className": "ReplicatedStorage",
-      "client": {
-        "$path": "src/client"
-      },
-      "packages": {
-        "$path": "Packages"
-      },
-      "shared": {
-        "$path": "src/shared"
-      }
-    },
-    "ServerScriptService": {
-      "$className": "ServerScriptService",
-      "server": {
-        "$path": "src/server"
-      }
-    },
-    "StarterPlayer": {
-      "$className": "StarterPlayer",
-      "StarterPlayerScripts": {
-        "$className": "StarterPlayerScripts",
-        "runtime": {
-          "$path": "src/runtime.client.luau"
-        }
-      }
-    }
-  }
-=======
-{
-  "name": "SanDiego",
-=======
-{
-  "name": "QuillTemplate",
->>>>>>> 1657481 (feat: update template)
   "tree": {
     "$className": "DataModel",
     "ReplicatedStorage": {
@@ -72,8 +34,4 @@
       }
     }
   }
-<<<<<<< HEAD
->>>>>>> main
-=======
->>>>>>> 1657481 (feat: update template)
 }

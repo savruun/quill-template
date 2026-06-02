@@ -1,13 +1,7 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
+
 option ServerOutput = "src/server/net"
 option ClientOutput = "src/client/net"
 
-=======
-option ServerOutput = "src/server/net"
-option ClientOutput = "src/client/net"
->>>>>>> main
-=======
 option ServerOutput = "src/server/net"
 option ClientOutput = "src/client/net"
 option FutureLibrary = "ReplicatedStorage.packages.future"
@@ -16,4 +10,3 @@ function getPersistentData {
   Return: unknown,
   Yield: Future
 }
->>>>>>> 1657481 (feat: update template)
